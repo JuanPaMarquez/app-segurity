@@ -41,7 +41,7 @@ function Inicio() {
       <main>
         <section id="welcome-section">
           <h1>AppSegurity Desktop</h1>
-          <a style={{textDecoration: "none"}} href="https://www.mediafire.com/file/bflgrg0f2xlw2wq/inicio.rar/file" target="_blank" rel="noopener noreferrer">
+          <a style={{textDecoration: "none"}} href="https://www.mediafire.com/file/fg7plmokasf1zir/AppSegurity.rar/file" target="_blank" rel="noopener noreferrer">
             <button 
               id="open-generateinforme" 
               className="cssbuttons-io"
