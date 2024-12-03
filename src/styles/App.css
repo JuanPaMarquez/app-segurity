@@ -1,0 +1,21 @@
+.inicio {
+  height: 100dvh;
+  font-family: 'Inter', sans-serif;
+}
+
+.login {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: env(safe-area-inset-bottom);
+}
+
+.perfil {
+  height: 100dvh;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}

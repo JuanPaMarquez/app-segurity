@@ -1,0 +1,207 @@
+.espacio {
+  width: 100%;
+  height: 82px;
+}
+/* 
+.espacio, #contacts{
+  background-color: #34495e;
+} */
+
+.espacio, #contacts, #welcome-section {
+  background-color: #0c2741;
+}
+
+nav {
+  width: 100%;
+  height: 82px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+nav #nombre {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+nav #nombre h2 {
+  margin: auto 20px;
+  padding: 0;
+}
+
+#nombre img {
+  width: 50px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 5px 20px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #daf1ff; 
+}
+
+nav > ul > li > a:hover {
+  color: #0D2A3F;
+  transition: color 0.5s ease;
+}
+
+@media (max-width: 650px) {
+
+  .espacio{
+    height: 120px;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    height: 120px;
+  }
+
+  nav #nombre {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  nav ul {
+    margin: auto;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: auto 1rem;
+    width: 100%;
+  }
+}
+
+#welcome-section {
+  height: 100vh;
+  color: #daf1ff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#welcome-section button {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: black;
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+#welcome-section button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#welcome-section button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#welcome-section button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+#welcome-section button:hover span {
+  transform: translateX(7px);
+}
+
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: black;
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io span {
+  font-size: bold;
+  position: relative;
+  z-index: 10;
+  transition: color 2s;
+  display: inline-flex;
+  align-items: center;  
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #16a085;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 1s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+#project .titulo {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background: #afd8f8;
+  color: #0D2A3F;
+}
+
+.contenido {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #d1ebff;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
